@@ -1,0 +1,295 @@
+
+ *{
+    margin: 0;
+    padding: 0;
+ }
+
+ body{
+    background-color: #D4AC0D;
+    height: 1500px;
+ }
+
+ /* Header*/
+.logotipo{
+    width: 200px;
+    margin-left: 100px;
+    background-color: black;
+ }
+
+ header{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+ .slogan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+    font-size: 40px;
+ }
+
+ @media(max-width: 1200px){
+   .slogan{
+      margin: 10px auto 10px auto;
+      font-size: 30px;
+   }
+
+   .logotipo{
+      margin: 10px auto 10px auto;
+   }
+ }
+
+ @media(max-width: 767px){
+   .slogan{
+      font-size: 20px;
+   }
+   
+ }
+
+ /* mision*/
+ .mision{
+    text-align: justify;
+    margin: 60px 460px 60px 460px; /*arriba, derecha, abajo, izquierda*/
+ }
+
+ .mision p{
+    font-size: 20px;
+ }
+
+ @media(max-width: 1200px){
+   .mision{
+      margin: 60px 300px 60px 300px;
+   }
+ }
+
+ @media(max-width: 850px){
+   .mision{
+      margin: 60px 200px 60px 200px;
+   }
+ }
+
+ @media(max-width: 600px){
+   .mision{
+      margin: 60px 100px 60px 100px;
+   }
+ }
+
+ @media(max-width: 400px){
+   .mision{
+      margin: 60px 10px 60px 10px;
+   }
+ }
+
+ /* Contacto*/
+ .contacto{
+    background-color: black;
+    color: #fff;
+    height: 450px;
+ }
+
+ /* Registro*/
+ .registro{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+ }
+
+/*Formulario*/
+
+ .formulario{
+    margin: 20px auto 20px auto;
+    width: 500px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: black;
+    display: flex;
+    justify-content: center;/*alinea los elementos de forma horizontal*/
+    align-items: center; /*alinea los elementos de forma vertical*/
+ }
+
+ label{
+    margin-right: 110px;
+ }
+
+ input{
+    height: 25px;
+ }
+
+ .row{
+    display: flex;
+    margin-bottom: 10px;
+ }
+
+ .col{
+    margin-right: 30px;
+ }
+
+ .button{
+    background-color: orange;
+    border: 0;
+    width: 100px;    
+    border-radius: 3px;
+ }
+
+ .button:hover{
+    cursor: pointer;
+ }
+
+ @media(max-width: 850px){
+   .formulario{
+      width: 400px;
+      height: 200px;
+   }
+
+   input{
+      height: 20px;
+   }
+
+   .col{
+      margin-right: 20px;
+   }
+
+   .row{
+      margin-bottom: 5px;
+   }
+
+   .registro{
+      font-size: 20px;
+   }
+
+ }
+
+ 
+ /* Comunicado*/
+ .comunicado{
+    margin-top: 70px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    height: 500px;
+ }
+
+ .comunicado .col1{
+    background-color: black;
+    color: #fff;
+    margin: 0 600px 0 600px; /*arriba, derecha, abajo, izquierda */
+ }
+
+ .comunicado .col2{
+    background-color: black;
+    color: #fff;
+    margin: 0 680px 0 680px; /*arriba, derecha, abajo, izquierda*/
+ }
+
+ @media(max-width: 1300px){
+   .comunicado .col1{
+      margin: 0 500px 0 500px;
+   }
+
+   .comunicado .col2{
+      margin: 0 500px 0 500px;
+   }
+ }
+
+ @media(max-width: 1260px){
+   .comunicado .col1{
+      margin: 0 400px 0 400px;
+   }
+
+   .comunicado .col2{
+      margin: 0 470px 0 470px;
+   }
+ }
+
+ @media(max-width: 1100px){
+   .comunicado .col1{
+      margin: 0 300px 0 300px;
+   }
+
+   .comunicado .col2{
+      margin: 0 400px 0 400px;
+   }
+ }
+
+ @media(max-width: 950px){
+   .comunicado .col1{
+      margin: 0 200px 0 200px;
+   }
+
+   .comunicado .col2{
+      margin: 0 300px 0 300px;
+   }
+ }
+
+ @media(max-width: 750px){
+   .comunicado .col1{
+      margin: 0 100px 0 100px;
+   }
+
+   .comunicado .col2{
+      margin: 0 200px 0 200px;
+   }
+ }
+
+ @media(max-width: 550px){
+   .comunicado .col1{
+      margin: 0 10px 0 10px;
+   }
+
+   .comunicado .col2{
+      margin: 0 100px 0 100px;
+   }
+ }
+
+ /* footer*/
+ footer{
+    display: flex;
+    background-color: black;
+    color: #fff;
+    flex-wrap: wrap;
+    width: 100%;
+ }
+
+ footer .col{
+    width: 33%;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 0;
+ }
+
+ footer .col .logo{
+    width: 300px;
+ }
+
+ footer .col a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #FFF;
+ }
+
+ @media(max-width: 900px){
+  footer .col{
+       /* width: 30%;
+       padding: 30px; */
+       width: 100%;
+   }
+   footer .col .logo{
+      width: 200px;
+   }
+}
+
+@media(max-width: 574px){
+  footer .col{
+       width: 100%;
+   }
+
+   footer .col .logo{
+      width: 150px;
+   }
+}
